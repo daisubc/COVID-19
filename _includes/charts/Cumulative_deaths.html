@@ -5,50 +5,13 @@
     <title>Awesome-pyecharts</title>
             <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
 
-    
 </head>
 <body>
-        <style>
-        .tab {
-            overflow: hidden;
-            border: 1px solid #ccc;
-            background-color: #f1f1f1;
-        }
-
-        .tab button {
-            background-color: inherit;
-            float: left;
-            border: none;
-            outline: none;
-            cursor: pointer;
-            padding: 12px 16px;
-            transition: 0.3s;
-        }
-
-        .tab button:hover {
-            background-color: #ddd;
-        }
-
-        .tab button.active {
-            background-color: #ccc;
-        }
-
-        .chart-container {
-            display: none;
-            padding: 6px 12px;
-            border-top: none;
-        }
-    </style>
-    <div class="tab">
-            <button class="tablinks" onclick="showChart(event, '63abd302e92d466eb42b7f8bfa99634c')">Cumulative deaths</button>
-    </div>
-
-    <div class="box">
-                <div id="63abd302e92d466eb42b7f8bfa99634c" class="chart-container" style="width:800px; height:600px;"></div>
+    <div id="666042eb423e4ec78e8e7b2b25ec778b" class="chart-container" style="width:800px; height:600px;"></div>
     <script>
-        var chart_63abd302e92d466eb42b7f8bfa99634c = echarts.init(
-            document.getElementById('63abd302e92d466eb42b7f8bfa99634c'), 'white', {renderer: 'canvas'});
-        var option_63abd302e92d466eb42b7f8bfa99634c = {
+        var chart_666042eb423e4ec78e8e7b2b25ec778b = echarts.init(
+            document.getElementById('666042eb423e4ec78e8e7b2b25ec778b'), 'white', {renderer: 'canvas'});
+        var option_666042eb423e4ec78e8e7b2b25ec778b = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -2919,34 +2882,7 @@
         }
     ]
 };
-        chart_63abd302e92d466eb42b7f8bfa99634c.setOption(option_63abd302e92d466eb42b7f8bfa99634c);
-    </script>
-    </div>
-
-    <script>
-    </script>
-    <script>
-        (function() {
-            containers = document.getElementsByClassName("chart-container");
-            if(containers.length > 0) {
-                containers[0].style.display = "block";
-            }
-        })()
-
-        function showChart(evt, chartID) {
-            let containers = document.getElementsByClassName("chart-container");
-            for (let i = 0; i < containers.length; i++) {
-                containers[i].style.display = "none";
-            }
-
-            let tablinks = document.getElementsByClassName("tablinks");
-            for (let i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = "tablinks";
-            }
-
-            document.getElementById(chartID).style.display = "block";
-            evt.currentTarget.className += " active";
-        }
+        chart_666042eb423e4ec78e8e7b2b25ec778b.setOption(option_666042eb423e4ec78e8e7b2b25ec778b);
     </script>
 </body>
 </html>

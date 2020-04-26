@@ -6,50 +6,13 @@
             <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
         <script type="text/javascript" src="https://assets.pyecharts.org/assets/maps/world.js"></script>
 
-    
 </head>
 <body>
-        <style>
-        .tab {
-            overflow: hidden;
-            border: 1px solid #ccc;
-            background-color: #f1f1f1;
-        }
-
-        .tab button {
-            background-color: inherit;
-            float: left;
-            border: none;
-            outline: none;
-            cursor: pointer;
-            padding: 12px 16px;
-            transition: 0.3s;
-        }
-
-        .tab button:hover {
-            background-color: #ddd;
-        }
-
-        .tab button.active {
-            background-color: #ccc;
-        }
-
-        .chart-container {
-            display: none;
-            padding: 6px 12px;
-            border-top: none;
-        }
-    </style>
-    <div class="tab">
-            <button class="tablinks" onclick="showChart(event, '5f12e5d6f772418a8fc45bcd35c60d16')">Travel history of infection cases(only based on reported information)</button>
-    </div>
-
-    <div class="box">
-                <div id="5f12e5d6f772418a8fc45bcd35c60d16" class="chart-container" style="width:900px; height:500px;"></div>
+    <div id="79d43c7c641d4aea9575281d6ef4e216" class="chart-container" style="width:900px; height:500px;"></div>
     <script>
-        var chart_5f12e5d6f772418a8fc45bcd35c60d16 = echarts.init(
-            document.getElementById('5f12e5d6f772418a8fc45bcd35c60d16'), 'white', {renderer: 'canvas'});
-        var option_5f12e5d6f772418a8fc45bcd35c60d16 = {
+        var chart_79d43c7c641d4aea9575281d6ef4e216 = echarts.init(
+            document.getElementById('79d43c7c641d4aea9575281d6ef4e216'), 'white', {renderer: 'canvas'});
+        var option_79d43c7c641d4aea9575281d6ef4e216 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -554,34 +517,7 @@
         "emphasis": {}
     }
 };
-        chart_5f12e5d6f772418a8fc45bcd35c60d16.setOption(option_5f12e5d6f772418a8fc45bcd35c60d16);
-    </script>
-    </div>
-
-    <script>
-    </script>
-    <script>
-        (function() {
-            containers = document.getElementsByClassName("chart-container");
-            if(containers.length > 0) {
-                containers[0].style.display = "block";
-            }
-        })()
-
-        function showChart(evt, chartID) {
-            let containers = document.getElementsByClassName("chart-container");
-            for (let i = 0; i < containers.length; i++) {
-                containers[i].style.display = "none";
-            }
-
-            let tablinks = document.getElementsByClassName("tablinks");
-            for (let i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = "tablinks";
-            }
-
-            document.getElementById(chartID).style.display = "block";
-            evt.currentTarget.className += " active";
-        }
+        chart_79d43c7c641d4aea9575281d6ef4e216.setOption(option_79d43c7c641d4aea9575281d6ef4e216);
     </script>
 </body>
 </html>
