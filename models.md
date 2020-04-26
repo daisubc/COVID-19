@@ -1,6 +1,6 @@
 ---
 layout: features
-title: Models
+title: COVID-19 Models
 heading: COVID-19 Models
 ---
 

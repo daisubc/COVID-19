@@ -1,6 +1,6 @@
 ---
 layout: features
-title: Mitigation Policies
+title: COVID-19 Mitigation Policies
 heading: COVID-19 Mitigation Policies
 ---
 
