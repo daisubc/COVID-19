@@ -1,0 +1,59 @@
+---
+layout: default
+heading: COVID-19 Data Visualization
+---
+
+<div class="container-fluid">
+  <div class='row'>
+  	<div class='col-lg-12'>
+      <h1>{{ page.heading }}</h1>
+  		{{ site.description }}
+      <hr>
+  	</div>
+  </div>
+  <div class='row'>
+    <div class='col-lg-6 col-sm-12'>	
+  		{% include charts/Cumulative_cases.html %}
+  	</div>
+    <div class='col-lg-6 col-sm-12'>  
+      {% include charts/New_cases.html %}
+    </div>
+    <div class='col-lg-6 col-sm-12'>  
+      {% include charts/Cumulative_deaths.html %}
+    </div>
+    <div class='col-lg-6 col-sm-12'>  
+      {% include charts/New_deaths.html %}
+    </div>
+    <div class='col-lg-6 col-sm-12'>	
+  		{% include charts/cases_of_Canada.html %}
+  	</div>
+    <div class='col-lg-6 col-sm-12'>  
+      {% include charts/new.html %}
+    </div>
+    <div class='col-lg-6 col-sm-12'>  
+      {% include charts/ratio_line.html %}
+    </div>
+    <div class='col-lg-6 col-sm-12'>  
+      {% include charts/infection_ratio.html %}
+    </div>
+    <div class='col-lg-6 col-sm-12'>	
+  		{% include charts/mortality_ratio.html %}
+  	</div>
+    <div class='col-lg-6 col-sm-12'>  
+      {% include charts/recovered_ratio.html %}
+    </div>
+    <div class='col-lg-6 col-sm-12'>  
+      {% include charts/Sources_of_infection.html %}
+    </div>
+    <div class='col-lg-6 col-sm-12'>  
+      {% include charts/age_distribution.html %}
+    </div>
+    <div class='col-lg-6 col-sm-12'>  
+      {% include charts/travel_history.html %}
+    </div>                         
+  </div>
+  <hr>
+  {% include footer.html %}
+</div>
+
+
