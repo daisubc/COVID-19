@@ -7,11 +7,11 @@
 
 </head>
 <body>
-    <div id="666042eb423e4ec78e8e7b2b25ec778b" class="chart-container" style="width:800px; height:600px;"></div>
+    <div id="f10a7e523df84a7098dbd2ef9565d4ac" class="chart-container" style="width:800px; height:600px;"></div>
     <script>
-        var chart_666042eb423e4ec78e8e7b2b25ec778b = echarts.init(
-            document.getElementById('666042eb423e4ec78e8e7b2b25ec778b'), 'white', {renderer: 'canvas'});
-        var option_666042eb423e4ec78e8e7b2b25ec778b = {
+        var chart_f10a7e523df84a7098dbd2ef9565d4ac = echarts.init(
+            document.getElementById('f10a7e523df84a7098dbd2ef9565d4ac'), 'white', {renderer: 'canvas'});
+        var option_f10a7e523df84a7098dbd2ef9565d4ac = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -2830,7 +2830,8 @@
     ],
     "title": [
         {
-            "text": "Cumulative deaths ",
+            "text": "Cumulative Deaths ",
+            "left": "center",
             "padding": 5,
             "itemGap": 10
         }
@@ -2840,7 +2841,8 @@
         "orient": "horizontal",
         "itemSize": 15,
         "itemGap": 10,
-        "left": "60%",
+        "left": "75%",
+        "top": "1.5%",
         "feature": {
             "saveAsImage": {
                 "is_show": true,
@@ -2865,7 +2867,21 @@
                     "back": "data zoom restore"
                 }
             },
-            "magicType": true,
+            "magicType": {
+                "is_show": true,
+                "type": [
+                    "line",
+                    "bar",
+                    "stack",
+                    "tiled"
+                ],
+                "title": {
+                    "line": "line graph",
+                    "bar": "bar graph",
+                    "stack": "stack gragh",
+                    "tiled": "tiled gragh"
+                }
+            },
             "brush": false
         }
     },
@@ -2882,7 +2898,7 @@
         }
     ]
 };
-        chart_666042eb423e4ec78e8e7b2b25ec778b.setOption(option_666042eb423e4ec78e8e7b2b25ec778b);
+        chart_f10a7e523df84a7098dbd2ef9565d4ac.setOption(option_f10a7e523df84a7098dbd2ef9565d4ac);
     </script>
 </body>
 </html>

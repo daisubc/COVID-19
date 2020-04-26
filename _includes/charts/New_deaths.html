@@ -7,11 +7,11 @@
 
 </head>
 <body>
-    <div id="3df95f22c90547d48777c68b22beb105" class="chart-container" style="width:800px; height:600px;"></div>
+    <div id="d7b88017617c417c80aa7b843e4f61a0" class="chart-container" style="width:800px; height:600px;"></div>
     <script>
-        var chart_3df95f22c90547d48777c68b22beb105 = echarts.init(
-            document.getElementById('3df95f22c90547d48777c68b22beb105'), 'white', {renderer: 'canvas'});
-        var option_3df95f22c90547d48777c68b22beb105 = {
+        var chart_d7b88017617c417c80aa7b843e4f61a0 = echarts.init(
+            document.getElementById('d7b88017617c417c80aa7b843e4f61a0'), 'white', {renderer: 'canvas'});
+        var option_d7b88017617c417c80aa7b843e4f61a0 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -2830,7 +2830,8 @@
     ],
     "title": [
         {
-            "text": "New deaths",
+            "text": "New Deaths",
+            "left": "center",
             "padding": 5,
             "itemGap": 10
         }
@@ -2840,7 +2841,8 @@
         "orient": "horizontal",
         "itemSize": 15,
         "itemGap": 10,
-        "left": "60%",
+        "left": "75%",
+        "top": "1.5%",
         "feature": {
             "saveAsImage": {
                 "is_show": true,
@@ -2865,7 +2867,21 @@
                     "back": "data zoom restore"
                 }
             },
-            "magicType": true,
+            "magicType": {
+                "is_show": true,
+                "type": [
+                    "line",
+                    "bar",
+                    "stack",
+                    "tiled"
+                ],
+                "title": {
+                    "line": "line graph",
+                    "bar": "bar graph",
+                    "stack": "stack gragh",
+                    "tiled": "tiled gragh"
+                }
+            },
             "brush": false
         }
     },
@@ -2882,7 +2898,7 @@
         }
     ]
 };
-        chart_3df95f22c90547d48777c68b22beb105.setOption(option_3df95f22c90547d48777c68b22beb105);
+        chart_d7b88017617c417c80aa7b843e4f61a0.setOption(option_d7b88017617c417c80aa7b843e4f61a0);
     </script>
 </body>
 </html>

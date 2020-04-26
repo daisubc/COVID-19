@@ -7,11 +7,11 @@
 
 </head>
 <body>
-    <div id="a5dc8a171a3f4fff9484b87c326b92c1" class="chart-container" style="width:800px; height:600px;"></div>
+    <div id="be78ecaf6bc7475aa086749639a0dbdb" class="chart-container" style="width:800px; height:600px;"></div>
     <script>
-        var chart_a5dc8a171a3f4fff9484b87c326b92c1 = echarts.init(
-            document.getElementById('a5dc8a171a3f4fff9484b87c326b92c1'), 'white', {renderer: 'canvas'});
-        var option_a5dc8a171a3f4fff9484b87c326b92c1 = {
+        var chart_be78ecaf6bc7475aa086749639a0dbdb = echarts.init(
+            document.getElementById('be78ecaf6bc7475aa086749639a0dbdb'), 'white', {renderer: 'canvas'});
+        var option_be78ecaf6bc7475aa086749639a0dbdb = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -7882,7 +7882,8 @@
     ],
     "title": [
         {
-            "text": "New cases",
+            "text": "New Cases",
+            "left": "center",
             "padding": 5,
             "itemGap": 10
         }
@@ -7892,7 +7893,8 @@
         "orient": "horizontal",
         "itemSize": 15,
         "itemGap": 10,
-        "left": "60%",
+        "left": "75%",
+        "top": "1.5%",
         "feature": {
             "saveAsImage": {
                 "is_show": true,
@@ -7917,7 +7919,21 @@
                     "back": "data zoom restore"
                 }
             },
-            "magicType": true,
+            "magicType": {
+                "is_show": true,
+                "type": [
+                    "line",
+                    "bar",
+                    "stack",
+                    "tiled"
+                ],
+                "title": {
+                    "line": "line graph",
+                    "bar": "bar graph",
+                    "stack": "stack gragh",
+                    "tiled": "tiled gragh"
+                }
+            },
             "brush": false
         }
     },
@@ -7934,7 +7950,7 @@
         }
     ]
 };
-        chart_a5dc8a171a3f4fff9484b87c326b92c1.setOption(option_a5dc8a171a3f4fff9484b87c326b92c1);
+        chart_be78ecaf6bc7475aa086749639a0dbdb.setOption(option_be78ecaf6bc7475aa086749639a0dbdb);
     </script>
 </body>
 </html>

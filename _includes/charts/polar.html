@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+
+</head>
+<body>
+    <div id="b7659921da9c4dd1bea91a546274b3d8" class="chart-container" style="width:400px; height:600px;"></div>
+    <script>
+        var chart_b7659921da9c4dd1bea91a546274b3d8 = echarts.init(
+            document.getElementById('b7659921da9c4dd1bea91a546274b3d8'), 'white', {renderer: 'canvas'});
+        var option_b7659921da9c4dd1bea91a546274b3d8 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "line",
+            "name": "infections",
+            "coordinateSystem": "polar",
+            "symbolSize": 4,
+            "data": [
+                67,
+                86,
+                95,
+                116,
+                156,
+                198,
+                257,
+                341,
+                441,
+                597,
+                727,
+                873,
+                1087,
+                1331,
+                1471,
+                2091,
+                2819,
+                3409,
+                4043,
+                4757,
+                5655,
+                6320,
+                7448,
+                8591,
+                10190,
+                11778,
+                12980,
+                14409,
+                15915,
+                17165,
+                18562,
+                19853,
+                21403,
+                22715,
+                23962,
+                25060,
+                26428,
+                27888,
+                29234,
+                30966,
+                32849,
+                34380,
+                36015,
+                37858,
+                39389,
+                41359,
+                43223,
+                44848,
+                46274
+            ],
+            "label": {
+                "show": false,
+                "position": "top",
+                "margin": 8
+            },
+            "areaStyle": {
+                "opacity": 0
+            }
+        },
+        {
+            "type": "line",
+            "name": "mortality",
+            "coordinateSystem": "polar",
+            "symbolSize": 4,
+            "data": [
+                1.0,
+                1.0,
+                1.0,
+                2.0,
+                2.0,
+                2.0,
+                2.0,
+                2.0,
+                5.0,
+                8.0,
+                9.0,
+                12.0,
+                13.0,
+                18.0,
+                21.0,
+                24.0,
+                27.0,
+                35.0,
+                39.0,
+                55.0,
+                61.0,
+                66.0,
+                90.0,
+                126.0,
+                145.0,
+                170.0,
+                223.0,
+                272.0,
+                302.0,
+                353.0,
+                417.0,
+                472.0,
+                541.0,
+                615.0,
+                689.0,
+                745.0,
+                821.0,
+                966.0,
+                1070.0,
+                1249.0,
+                1365.0,
+                1527.0,
+                1636.0,
+                1757.0,
+                1909.0,
+                2072.0,
+                2232.0,
+                2390.0,
+                2553.0
+            ],
+            "label": {
+                "show": false,
+                "position": "top",
+                "margin": 8
+            },
+            "areaStyle": {
+                "opacity": 0
+            }
+        },
+        {
+            "type": "line",
+            "name": "recovered",
+            "coordinateSystem": "polar",
+            "symbolSize": 4,
+            "data": [
+                8.0,
+                9.0,
+                9.0,
+                9.0,
+                9.0,
+                10.0,
+                10.0,
+                10.0,
+                10.0,
+                10.0,
+                11.0,
+                13.0,
+                15.0,
+                16.0,
+                18.0,
+                112.0,
+                186.0,
+                197.0,
+                228.0,
+                354.0,
+                501.0,
+                585.0,
+                1114.0,
+                1297.0,
+                1667.0,
+                1971.0,
+                2323.0,
+                2735.0,
+                3100.0,
+                3616.0,
+                4050.0,
+                4653.0,
+                5311.0,
+                6013.0,
+                6650.0,
+                7172.0,
+                7758.0,
+                8235.0,
+                8979.0,
+                9712.0,
+                10543.0,
+                11207.0,
+                11843.0,
+                12586.0,
+                13188.0,
+                13986.0,
+                14761.0,
+                15541.0,
+                16425.0
+            ],
+            "label": {
+                "show": false,
+                "position": "top",
+                "margin": 8
+            },
+            "areaStyle": {
+                "opacity": 0
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "infections",
+                "mortality",
+                "recovered"
+            ],
+            "selected": {
+                "infections": true,
+                "mortality": true,
+                "recovered": true
+            },
+            "show": true,
+            "left": "10",
+            "top": "5%",
+            "orient": "vertical",
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0
+    },
+    "radiusAxis": {
+        "scale": false
+    },
+    "angleAxis": {
+        "data": [
+            "2020-03-08",
+            "2020-03-09",
+            "2020-03-10",
+            "2020-03-11",
+            "2020-03-12",
+            "2020-03-13",
+            "2020-03-14",
+            "2020-03-15",
+            "2020-03-16",
+            "2020-03-17",
+            "2020-03-18",
+            "2020-03-19",
+            "2020-03-20",
+            "2020-03-21",
+            "2020-03-22",
+            "2020-03-23",
+            "2020-03-24",
+            "2020-03-25",
+            "2020-03-26",
+            "2020-03-27",
+            "2020-03-28",
+            "2020-03-29",
+            "2020-03-30",
+            "2020-03-31",
+            "2020-04-01",
+            "2020-04-02",
+            "2020-04-03",
+            "2020-04-04",
+            "2020-04-05",
+            "2020-04-06",
+            "2020-04-07",
+            "2020-04-08",
+            "2020-04-09",
+            "2020-04-10",
+            "2020-04-11",
+            "2020-04-12",
+            "2020-04-13",
+            "2020-04-14",
+            "2020-04-15",
+            "2020-04-16",
+            "2020-04-17",
+            "2020-04-18",
+            "2020-04-19",
+            "2020-04-20",
+            "2020-04-21",
+            "2020-04-22",
+            "2020-04-23",
+            "2020-04-24",
+            "2020-04-25"
+        ],
+        "clockwise": false,
+        "type": "category",
+        "scale": false,
+        "splitNumber": 5,
+        "axisLabel": {
+            "show": false,
+            "position": "top",
+            "margin": 8
+        }
+    },
+    "polar": {},
+    "title": [
+        {
+            "text": "Infections/Mortality/Recovered Polar Plot",
+            "left": "center",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ],
+    "toolbox": {
+        "show": true,
+        "orient": "horizontal",
+        "itemSize": 15,
+        "itemGap": 10,
+        "left": "75%",
+        "top": "5%",
+        "feature": {
+            "saveAsImage": {
+                "is_show": true,
+                "title": "save as image"
+            },
+            "restore": {
+                "is_show": true,
+                "title": "restore"
+            },
+            "dataView": {
+                "title": "data view",
+                "lang": [
+                    "data view",
+                    "close",
+                    "refresh"
+                ]
+            },
+            "dataZoom": {
+                "is_show": true,
+                "title": {
+                    "zoom": "data zoom",
+                    "back": "data zoom restore"
+                }
+            },
+            "magicType": {
+                "is_show": true,
+                "type": [
+                    "line",
+                    "bar",
+                    "stack",
+                    "tiled"
+                ],
+                "title": {
+                    "line": "line graph",
+                    "bar": "bar graph",
+                    "stack": "stack gragh",
+                    "tiled": "tiled gragh"
+                }
+            },
+            "brush": false
+        }
+    }
+};
+        chart_b7659921da9c4dd1bea91a546274b3d8.setOption(option_b7659921da9c4dd1bea91a546274b3d8);
+    </script>
+</body>
+</html>
