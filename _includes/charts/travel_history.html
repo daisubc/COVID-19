@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/maps/world.js"></script>
+
+    
+</head>
+<body>
+        <style>
+        .tab {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+        }
+
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 12px 16px;
+            transition: 0.3s;
+        }
+
+        .tab button:hover {
+            background-color: #ddd;
+        }
+
+        .tab button.active {
+            background-color: #ccc;
+        }
+
+        .chart-container {
+            display: none;
+            padding: 6px 12px;
+            border-top: none;
+        }
+    </style>
+    <div class="tab">
+            <button class="tablinks" onclick="showChart(event, '5f12e5d6f772418a8fc45bcd35c60d16')">Travel history of infection cases(only based on reported information)</button>
+    </div>
+
+    <div class="box">
+                <div id="5f12e5d6f772418a8fc45bcd35c60d16" class="chart-container" style="width:900px; height:500px;"></div>
+    <script>
+        var chart_5f12e5d6f772418a8fc45bcd35c60d16 = echarts.init(
+            document.getElementById('5f12e5d6f772418a8fc45bcd35c60d16'), 'white', {renderer: 'canvas'});
+        var option_5f12e5d6f772418a8fc45bcd35c60d16 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "effectScatter",
+            "name": "geo",
+            "coordinateSystem": "geo",
+            "showEffectOn": "render",
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "symbolSize": 12,
+            "data": [
+                {
+                    "name": "United States",
+                    "value": [
+                        -95.71,
+                        37.09,
+                        133
+                    ]
+                },
+                {
+                    "name": "United Kingdom",
+                    "value": [
+                        -3.44,
+                        55.38,
+                        27
+                    ]
+                },
+                {
+                    "name": "Iran",
+                    "value": [
+                        53.69,
+                        32.43,
+                        26
+                    ]
+                },
+                {
+                    "name": "Egypt",
+                    "value": [
+                        30.8,
+                        26.82,
+                        24
+                    ]
+                },
+                {
+                    "name": "Austria",
+                    "value": [
+                        14.55,
+                        47.52,
+                        18
+                    ]
+                },
+                {
+                    "name": "Canada",
+                    "value": [
+                        -106.35,
+                        56.13,
+                        18
+                    ]
+                },
+                {
+                    "name": "Spain",
+                    "value": [
+                        -3.75,
+                        40.46,
+                        18
+                    ]
+                },
+                {
+                    "name": "Mexico",
+                    "value": [
+                        -102.55,
+                        23.63,
+                        12
+                    ]
+                },
+                {
+                    "name": "Germany",
+                    "value": [
+                        10.45,
+                        51.17,
+                        10
+                    ]
+                },
+                {
+                    "name": "France",
+                    "value": [
+                        2.21,
+                        46.23,
+                        9
+                    ]
+                },
+                {
+                    "name": "China",
+                    "value": [
+                        104.2,
+                        35.86,
+                        8
+                    ]
+                },
+                {
+                    "name": "Philippines",
+                    "value": [
+                        121.77,
+                        12.88,
+                        8
+                    ]
+                },
+                {
+                    "name": "Italy",
+                    "value": [
+                        12.57,
+                        41.87,
+                        8
+                    ]
+                },
+                {
+                    "name": "Portugal",
+                    "value": [
+                        -8.22,
+                        39.4,
+                        6
+                    ]
+                },
+                {
+                    "name": "United Arab Emirates",
+                    "value": [
+                        53.85,
+                        23.42,
+                        6
+                    ]
+                },
+                {
+                    "name": "India",
+                    "value": [
+                        78.96,
+                        20.59,
+                        5
+                    ]
+                },
+                {
+                    "name": "Costa Rica",
+                    "value": [
+                        -83.75,
+                        9.75,
+                        5
+                    ]
+                },
+                {
+                    "name": "Ecuador",
+                    "value": [
+                        -78.18,
+                        -1.83,
+                        3
+                    ]
+                },
+                {
+                    "name": "Dominican Republic",
+                    "value": [
+                        -0.19,
+                        51.52,
+                        3
+                    ]
+                },
+                {
+                    "name": "Switzerland",
+                    "value": [
+                        8.23,
+                        46.82,
+                        3
+                    ]
+                },
+                {
+                    "name": "Australia",
+                    "value": [
+                        133.78,
+                        -25.27,
+                        2
+                    ]
+                },
+                {
+                    "name": "Japan",
+                    "value": [
+                        138.25,
+                        36.2,
+                        2
+                    ]
+                },
+                {
+                    "name": "Bahamas",
+                    "value": [
+                        -77.4,
+                        25.03,
+                        2
+                    ]
+                },
+                {
+                    "name": "Colombia",
+                    "value": [
+                        -74.3,
+                        4.57,
+                        2
+                    ]
+                },
+                {
+                    "name": "Singapore",
+                    "value": [
+                        103.82,
+                        1.35,
+                        2
+                    ]
+                },
+                {
+                    "name": "Jamaica",
+                    "value": [
+                        -77.3,
+                        18.11,
+                        2
+                    ]
+                },
+                {
+                    "name": "Puerto Rico",
+                    "value": [
+                        -66.59,
+                        18.22,
+                        2
+                    ]
+                },
+                {
+                    "name": "Turkey",
+                    "value": [
+                        35.24,
+                        38.96,
+                        2
+                    ]
+                },
+                {
+                    "name": "Barbados",
+                    "value": [
+                        -59.54,
+                        13.19,
+                        2
+                    ]
+                },
+                {
+                    "name": "Brazil",
+                    "value": [
+                        -51.93,
+                        -14.24,
+                        2
+                    ]
+                },
+                {
+                    "name": "Jordan",
+                    "value": [
+                        36.24,
+                        30.59,
+                        2
+                    ]
+                },
+                {
+                    "name": "Russia",
+                    "value": [
+                        105.32,
+                        61.52,
+                        1
+                    ]
+                },
+                {
+                    "name": "Greece",
+                    "value": [
+                        21.82,
+                        39.07,
+                        1
+                    ]
+                },
+                {
+                    "name": "Belgium",
+                    "value": [
+                        4.47,
+                        50.5,
+                        1
+                    ]
+                },
+                {
+                    "name": "Peru",
+                    "value": [
+                        -75.02,
+                        -9.19,
+                        1
+                    ]
+                },
+                {
+                    "name": "Pakistan",
+                    "value": [
+                        69.35,
+                        30.38,
+                        1
+                    ]
+                },
+                {
+                    "name": "Ukraine",
+                    "value": [
+                        31.17,
+                        48.38,
+                        1
+                    ]
+                },
+                {
+                    "name": "Thailand",
+                    "value": [
+                        100.99,
+                        15.87,
+                        1
+                    ]
+                },
+                {
+                    "name": "Malta",
+                    "value": [
+                        14.38,
+                        35.94,
+                        1
+                    ]
+                },
+                {
+                    "name": "Finland",
+                    "value": [
+                        25.75,
+                        61.92,
+                        1
+                    ]
+                },
+                {
+                    "name": "Denmark",
+                    "value": [
+                        9.5,
+                        56.26,
+                        1
+                    ]
+                },
+                {
+                    "name": "Israel",
+                    "value": [
+                        34.85,
+                        31.05,
+                        1
+                    ]
+                },
+                {
+                    "name": "Netherlands",
+                    "value": [
+                        5.29,
+                        52.13,
+                        1
+                    ]
+                },
+                {
+                    "name": "Nigeria",
+                    "value": [
+                        8.68,
+                        9.08,
+                        1
+                    ]
+                }
+            ],
+            "label": {
+                "show": false,
+                "position": "top",
+                "margin": 8
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "geo"
+            ],
+            "selected": {
+                "geo": true
+            },
+            "show": false,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "formatter": "{b}",
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0
+    },
+    "title": [
+        {
+            "text": "Travel history of infection cases (only based on reported information)",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ],
+    "toolbox": {
+        "show": true,
+        "orient": "horizontal",
+        "itemSize": 15,
+        "itemGap": 10,
+        "left": "80%",
+        "feature": {
+            "saveAsImage": {
+                "is_show": true,
+                "title": "save as image"
+            },
+            "restore": {
+                "is_show": true,
+                "title": "restore"
+            },
+            "dataView": {
+                "title": "data view",
+                "lang": [
+                    "data view",
+                    "close",
+                    "refresh"
+                ]
+            },
+            "dataZoom": {
+                "is_show": true,
+                "title": {
+                    "zoom": "data zoom",
+                    "back": "data zoom restore"
+                }
+            },
+            "magicType": true,
+            "brush": false
+        }
+    },
+    "visualMap": {
+        "show": true,
+        "type": "continuous",
+        "min": 0,
+        "max": 100,
+        "inRange": {
+            "color": [
+                "#50a3ba",
+                "#eac763",
+                "#d94e5d"
+            ]
+        },
+        "calculable": true,
+        "inverse": false,
+        "splitNumber": 5,
+        "orient": "vertical",
+        "showLabel": true,
+        "itemWidth": 20,
+        "itemHeight": 140,
+        "borderWidth": 0
+    },
+    "geo": {
+        "map": "world",
+        "roam": true,
+        "emphasis": {}
+    }
+};
+        chart_5f12e5d6f772418a8fc45bcd35c60d16.setOption(option_5f12e5d6f772418a8fc45bcd35c60d16);
+    </script>
+    </div>
+
+    <script>
+    </script>
+    <script>
+        (function() {
+            containers = document.getElementsByClassName("chart-container");
+            if(containers.length > 0) {
+                containers[0].style.display = "block";
+            }
+        })()
+
+        function showChart(evt, chartID) {
+            let containers = document.getElementsByClassName("chart-container");
+            for (let i = 0; i < containers.length; i++) {
+                containers[i].style.display = "none";
+            }
+
+            let tablinks = document.getElementsByClassName("tablinks");
+            for (let i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = "tablinks";
+            }
+
+            document.getElementById(chartID).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</body>
+</html>
