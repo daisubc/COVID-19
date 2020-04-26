@@ -5,3 +5,16 @@
     </div>
   </div>
 </footer>
+<script type="text/javascript">
+
+window.onresize = function() {
+	var x = document.getElementsByClassName("chart-container");
+	var width = $(window).width() - 25; 
+
+	for (i = 0; i < x.length; i++) {
+		console.log(x[i]);
+		x[i].style.width = width;
+	}
+}
+
+</script>

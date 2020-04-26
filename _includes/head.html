@@ -15,10 +15,38 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
   <![endif]-->
 
-  <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
-  <script type="text/javascript" src="https://assets.pyecharts.org/assets/maps/world.js"></script>
-  <script type="text/javascript" src="https://assets.pyecharts.org/assets/jquery.min.js"></script>
-  <script type="text/javascript" src="https://assets.pyecharts.org/assets/jquery-ui.min.js"></script>
-  <script type="text/javascript" src="https://assets.pyecharts.org/assets/ResizeSensor.js"></script>
-  <link rel="stylesheet"  href="https://assets.pyecharts.org/assets/jquery-ui.css">  
+  <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script> 
+  <style>
+  .tab {
+      overflow: hidden;
+      border: 1px solid #ccc;
+      background-color: #f1f1f1;
+  }
+
+  .tab button {
+      background-color: inherit;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 12px 16px;
+      transition: 0.3s;
+  }
+
+  .tab button:hover {
+      background-color: #ddd;
+  }
+
+  .tab button.active {
+      background-color: #ccc;
+  }
+
+  .chart-container {
+      max-width: 100%;
+      padding: 6px 12px;
+      border-top: none;
+      height: calc(100vh - 50px);
+      width: calc(100vw - 50px);
+  }
+</style>  
 </head>

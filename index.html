@@ -12,10 +12,20 @@ heading: COVID-19 Data Analytics
   	</div>
   </div>
   <div class='row'>
-    <div class='col-lg-12'>	
-  		{% include charts.html %}
+    <div class='col-lg-6 col-sm-12'>	
+  		{% include charts/cumulative.html %}
   	</div>
+    <div class='col-lg-6 col-sm-12'>  
+      {% include charts/new.html %}
+    </div>
+    <div class='col-lg-6 col-sm-12'>  
+      {% include charts/cumulative_death.html %}
+    </div>
+    <div class='col-lg-6 col-sm-12'>  
+      {% include charts/new_death.html %}
+    </div>            
   </div>
+  <hr>
   {% include footer.html %}
 </div>
 
