@@ -7,11 +7,11 @@
 
 </head>
 <body>
-    <div id="425d13bd5b654877a164e9d8103ae9bf" class="chart-container" style="width:600px; height:600px;"></div>
+    <div id="edfdad4388e440bd90bfe1c945e188fc" class="chart-container" style="width:600px; height:600px;"></div>
     <script>
-        var chart_425d13bd5b654877a164e9d8103ae9bf = echarts.init(
-            document.getElementById('425d13bd5b654877a164e9d8103ae9bf'), 'white', {renderer: 'canvas'});
-        var option_425d13bd5b654877a164e9d8103ae9bf = {
+        var chart_edfdad4388e440bd90bfe1c945e188fc = echarts.init(
+            document.getElementById('edfdad4388e440bd90bfe1c945e188fc'), 'white', {renderer: 'canvas'});
+        var option_edfdad4388e440bd90bfe1c945e188fc = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -52,6 +52,10 @@
             "clockwise": true,
             "data": [
                 {
+                    "name": "unknown",
+                    "value": 47328
+                },
+                {
                     "name": "close contact",
                     "value": 410
                 },
@@ -79,6 +83,7 @@
     "legend": [
         {
             "data": [
+                "unknown",
                 "close contact",
                 "community"
             ],
@@ -113,11 +118,10 @@
     ],
     "toolbox": {
         "show": true,
-        "orient": "horizontal",
+        "orient": "vertical",
         "itemSize": 15,
         "itemGap": 10,
-        "left": "75%",
-        "top": "5%",
+        "left": "85%",
         "feature": {
             "saveAsImage": {
                 "is_show": true,
@@ -142,12 +146,24 @@
                     "back": "data zoom restore"
                 }
             },
-            "magicType": false,
+            "magicType": {
+                "is_show": true,
+                "type": [
+                    "line",
+                    "bar",
+                    "tiled"
+                ],
+                "title": {
+                    "line": "line graph",
+                    "bar": "bar graph",
+                    "tiled": "tiled gragh"
+                }
+            },
             "brush": false
         }
     }
 };
-        chart_425d13bd5b654877a164e9d8103ae9bf.setOption(option_425d13bd5b654877a164e9d8103ae9bf);
+        chart_edfdad4388e440bd90bfe1c945e188fc.setOption(option_edfdad4388e440bd90bfe1c945e188fc);
     </script>
 </body>
 </html>
