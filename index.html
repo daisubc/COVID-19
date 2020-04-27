@@ -3,14 +3,28 @@ layout: default
 heading: COVID-19 Data Visualization
 ---
 
-<div class="container-fluid">
+<div class="container">
   <div class='row'>
   	<div class='col-lg-12'>
       <h1>{{ page.heading }}</h1>
-  		{{ site.description }}
-      <hr>
+  		<p>{{ site.description }}</p>
   	</div>
   </div>
+  <div class='row'>
+    <div class='col-lg-12'>
+      <p>COVID-19 has disrupted our lives in unprecedented ways. Our research group is trying to estimate the extent of its prevalence in the society, quantify its infectiousness, model its spread and develop optimal  mitigation policies. The focus of our work is primarily on Canadian data.</p>
+    </div>
+    <div class='col-lg-12'>
+      <p>Information</p>
+      <ul>
+        <li>Data Source: <a target="_blank" href="https://github.com/ishaberry/Covid19Canada">https://github.com/ishaberry/Covid19Canada</a></li>
+        <li>Last Updated: April 25, 2020</li>
+        <li>Created by: Liang Cao and Siang Lim with contributions from Bhushan Gopaluni, Sirish Shah and Aditya Tulsyan</li>
+      </ul>
+      <hr>
+  </div>  
+</div>
+<div class="container-fluid">
   <div class='row display-flex'>
     <div class='col-lg-6 col-sm-12'>	
       {% include charts/Cumulative_cases.html %}
