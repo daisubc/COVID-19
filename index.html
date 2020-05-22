@@ -18,7 +18,7 @@ heading: COVID-19 Data Visualization
       <p>Information</p>
       <ul>
         <li>Data Source: <a target="_blank" href="https://github.com/ishaberry/Covid19Canada">https://github.com/ishaberry/Covid19Canada</a></li>
-        <li>Last Updated: May 20, 2020</li>
+        <li>Last Updated: May 21, 2020</li>
         <li>Created by: Liang Cao and Siang Lim with contributions from Bhushan Gopaluni, Sirish Shah and Aditya Tulsyan</li>
       </ul>
       <hr>
@@ -64,7 +64,19 @@ heading: COVID-19 Data Visualization
     </div>
     <div class='col-lg-6 col-sm-12'>  
       {% include charts/travel_history.html %}
-    </div>                         
+    </div>
+    <div class='col-lg-6 col-sm-12'>  
+      {% include charts/Total Hospitalized.html %}
+    </div>   
+    <div class='col-lg-6 col-sm-12'>  
+      {% include charts/Daily Hospitalized.html %}
+    </div>   
+    <div class='col-lg-6 col-sm-12'>  
+      {% include charts/Total ICU.html %}
+    </div>
+    <div class='col-lg-6 col-sm-12'>  
+      {% include charts/Daily ICU.html %}
+    </div>                       
   </div>
   <hr>
   {% include footer.html %}
